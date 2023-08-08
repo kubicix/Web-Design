@@ -1,4 +1,4 @@
-h2{
+/* h2{
     color: deepskyblue;
     font-size: 20px;
     text-align: justify;
@@ -6,8 +6,27 @@ h2{
 div+p{
     color: red;
     
-}
+} */
 
 /* .container div p {
     color: royalblue;
 } */
+
+h2[title="header1"]{
+    color: red;
+}
+
+p[title="paragraph1"]{
+    color: saddlebrown;
+    text-align: justify;
+}
+
+a[target="_blank"]{
+    color: lawngreen;
+    background-color: grey;
+}
+
+input[type="text"]{
+    background-color: rosybrown;
+}
+
