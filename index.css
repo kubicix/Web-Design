@@ -3,8 +3,11 @@ h2{
     font-size: 20px;
     text-align: justify;
 }
-p{
-    color: gray;
-    font-size: 15px;
-    text-align: center;
+div+p{
+    color: red;
+    
 }
+
+/* .container div p {
+    color: royalblue;
+} */
