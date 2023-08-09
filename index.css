@@ -1,32 +1,43 @@
-/* h2{
-    color: deepskyblue;
-    font-size: 20px;
-    text-align: justify;
-}
-div+p{
-    color: red;
-    
-} */
+/* PSEUDO ELEMENTS */
 
-/* .container div p {
-    color: royalblue;
-} */
-
-h2[title="header1"]{
-    color: red;
+p::first-line{
+    font-weight:bold;
+    color: darkred;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
 
-p[title="paragraph1"]{
-    color: saddlebrown;
-    text-align: justify;
+p::first-letter{
+    font-size: 50px;
 }
 
-a[target="_blank"]{
-    color: lawngreen;
-    background-color: grey;
-}
+/* PSEUDO CLASSES*/
 
-input[type="text"]{
-    background-color: rosybrown;
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
 }
+ ul li:first-child{
+    background-color: darkseagreen;
+ }
 
+ ul li:last-child{
+    background-color: deepskyblue;
+ }
+
+ a:visited{
+    color: fuchsia;
+ }
+
+ a:hover{
+    color: white;
+    background-color: aqua;
+ }
+
+ a{
+    padding:5px 10px;
+    text-decoration: none;
+    display:block;
+    width: 100px;
+    margin-bottom: 10px;
+ }
