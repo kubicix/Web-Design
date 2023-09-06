@@ -34,8 +34,64 @@
         </div>
         <div class="form-group mt-3">
             <label for="city">Place of Birth</label>
-            <select name="city" id="city"></select>
+            <select name="city" id="city" class="form-select">
+                <option value="34">Istanbul</option>
+                <option value="41">Kocaeli</option>
+                <option value="35">İzmir</option>
+                <option value="26">Eskişehir</option>
+            </select>
         </div>
+        <div class="form-group mt-3">
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" cols="20" rows="8" class="form-control"></textarea>
+        </div>
+        <div class="form-group mt-3">
+            <legend>Your Hobbies:</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Football
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Basketball
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Swimming
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Running
+                </label>
+            </div>
+        </div>
+        
+        <div class="custom-control custom-checkbox mt-4">
+            <input type="checkbox" id="cb" class="custom-control-input">
+            <label class="custom-control-label" for="cb">Checkbox</label>
+        </div>
+
+        <div class="custom-control custom-radio mt-4">
+            <input type="radio" id="rb" class="custom-control-input">
+            <label class="custom-control-label" for="rb">RadioButton</label>
+        </div>
+
+        <div class="input-group mt-3">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text" id="ig">@gmail.com</span>
+            </div>
+        </div>
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="ig">https://instagram.com</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
     </form>
 
  
