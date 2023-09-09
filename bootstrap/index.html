@@ -17,7 +17,38 @@
 
 <body class="w-75 mx-auto my-4">
 
-    <div class="carousel slide" data-ride="carousel">
+    <button type"button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Show Modal</button>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Header</h4>
+                </div>
+                <div class="modal-body">Lorem ipsum dolor sit.</div>
+                <div class="modal-footer">Lorem ipsum dolor sit amet.</div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <button type"button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2">Show Modal 2</button>
+
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Header 2</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">Lorem ipsum dolor sit.</div>
+                <div class="modal-footer"><button class="btn btn-danger" type="button" data-dismiss="modal">Exit</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block" src="images1/img1.jpg" alt="" style="height: 500px;width: 500px;">
@@ -86,7 +117,7 @@
         <a href="#slider2" class="carousel-control-next" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
-    </div>
+    </div> -->
 
     <!-- <div id="accordion">
         <div class="card-header">
