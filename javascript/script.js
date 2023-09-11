@@ -93,3 +93,52 @@ var calculate = function(){
 }
 console.log(calculate)
 console.log(typeof(calculate))
+
+// Mathematical operators
+//a20 b10 c5 d3
+let data;
+const a=20;
+const b=10;
+const c=5;
+let d=3;
+
+data = a+b;
+data=a-b;
+data=a*b;
+data=a/b;
+
+// Assignment operators
+
+data=a;
+data+=a; // data = data+a
+data-=a; // data = data-a
+data*=a; // data = data*a
+data/=a; // data = data/a
+data%=a; // data = data%a
+
+// Comparison operators
+//a20 b10 c5 d3
+
+data = a==b;  // are they equal
+data = b==c;  // are they equal
+data = 5=="5";  // are they equal yes because they are same
+data = 5==="5";  // are they equal no because types aren't the same
+data = a!=b;  // a is not equal to b is true
+data = a!==b;  // a not is equal to b 
+
+// Logical operators
+//a20 b10 c5 d3
+
+// && and
+data = (a>b) && (a>c)
+// || or
+data = (b>a) || (c>a)
+// ! not
+data=!(a<b)
+
+
+
+
+
+console.log(data);
+console.log(typeof(data));
