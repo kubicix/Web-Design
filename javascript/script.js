@@ -141,27 +141,94 @@
 
 // DATE OBJECT
 
-let time = new Date();
-let birthday= new Date(2001,7,10);
+// let time = new Date();
+// let birthday= new Date(2001,7,10);
 
-// Set Methods
-time.setDate(25);
-time.setMonth(3);
-// time.setFullYear(2013);
+// // Set Methods
+// time.setDate(25);
+// time.setMonth(3);
+// // time.setFullYear(2013);
 
-// Get Methods
-console.log(time.getMonth()+1)
-console.log(time.getDate())
-console.log(time.getFullYear())
-console.log(time.getDay())
-console.log(time.getHours())
-console.log(time.getMinutes())
-console.log(time.getSeconds())
-console.log(time.getMilliseconds())
+// // Get Methods
+// console.log(time.getMonth()+1)
+// console.log(time.getDate())
+// console.log(time.getFullYear())
+// console.log(time.getDay())
+// console.log(time.getHours())
+// console.log(time.getMinutes())
+// console.log(time.getSeconds())
+// console.log(time.getMilliseconds())
 
 
 
-console.log(time);
-console.log(typeof(time));
+// console.log(time);
+// console.log(typeof(time));
 
-console.log("your age=",time.getFullYear()-birthday.getFullYear());
+// console.log("your age=",time.getFullYear()-birthday.getFullYear());
+
+// NUMBERS
+// let veri;
+
+// veri=Number("5");
+// veri=parseInt("5");
+// veri=parseFloat("5.1");
+// veri=isNaN("c5")
+// veri=isNaN("5")
+
+// var sayi=15.43563453;
+
+// veri=sayi.toPrecision(5);
+// veri=sayi.toFixed(6);
+
+// veri=Math.PI;
+// veri=Math.round(3.2);
+// veri=Math.round(3.5);
+// veri=Math.ceil(3.2); // always up
+// veri=Math.floor(8.3); // alwayd down
+// veri=Math.pow(3,3);
+// veri=Math.sqrt(81);
+// veri=Math.abs(-99);
+// veri=Math.min(1,4,5,2,1,4,2,1,31,42,-2);
+// veri=Math.max(1,4,5,2,1,4,2,1,31,42,-2);
+// veri=Math.floor(Math.random()*100);
+
+
+// console.log(veri);
+// console.log(typeof(veri));
+
+// STRINGS
+
+const firstname="Kubilay";
+const lastname="Birer";
+const age="22";
+let hobbies="futbol oyun dizi film fitness";
+
+let veri;
+
+// string concatenations
+
+veri=firstname+" "+lastname;
+veri="Kubilay";
+veri+=" Birer"
+
+veri='My name is '+firstname+' '+lastname+' my age is '+age+'and im living in İstanbul\'da '
+
+veri=firstname.concat(" ",lastname)
+
+veri=veri.toUpperCase();
+veri=veri.toLowerCase();
+
+// veri=veri.substring(2,11);
+// veri=veri.slice(0,8);
+
+// veri=veri.indexOf("k");
+
+// veri=veri.replace("kubilay","Teoman")
+
+// veri=veri.length;
+
+veri=hobbies.split(" ")
+
+
+console.log(veri);
+console.log(typeof(veri));
