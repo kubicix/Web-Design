@@ -198,37 +198,97 @@
 
 // STRINGS
 
-const firstname="Kubilay";
-const lastname="Birer";
-const age="22";
-let hobbies="futbol oyun dizi film fitness";
+// const firstname="Kubilay";
+// const lastname="Birer";
+// const age="22";
+// let hobbies="futbol oyun dizi film fitness";
 
-let veri;
+// let veri;
 
-// string concatenations
+// // string concatenations
 
-veri=firstname+" "+lastname;
-veri="Kubilay";
-veri+=" Birer"
+// veri=firstname+" "+lastname;
+// veri="Kubilay";
+// veri+=" Birer"
 
-veri='My name is '+firstname+' '+lastname+' my age is '+age+'and im living in İstanbul\'da '
+// veri='My name is '+firstname+' '+lastname+' my age is '+age+'and im living in İstanbul\'da '
 
-veri=firstname.concat(" ",lastname)
+// veri=firstname.concat(" ",lastname)
 
-veri=veri.toUpperCase();
-veri=veri.toLowerCase();
+// veri=veri.toUpperCase();
+// veri=veri.toLowerCase();
 
-// veri=veri.substring(2,11);
-// veri=veri.slice(0,8);
+// // veri=veri.substring(2,11);
+// // veri=veri.slice(0,8);
 
-// veri=veri.indexOf("k");
+// // veri=veri.indexOf("k");
 
-// veri=veri.replace("kubilay","Teoman")
+// // veri=veri.replace("kubilay","Teoman")
 
-// veri=veri.length;
+// // veri=veri.length;
 
-veri=hobbies.split(" ")
+// veri=hobbies.split(" ")
 
 
-console.log(veri);
-console.log(typeof(veri));
+// console.log(veri);
+// console.log(typeof(veri));
+
+// ARRAYS 
+
+// let names = ["asy","kubi","ereş","fıstık"];
+// let years =[2002,2001,2008,2020]
+// let mix =["arda","güler",2004,null,undefined,["programlama","futbol"]];
+
+// console.log(names);
+// console.log(names.length)
+// console.log(typeof(names));
+
+// console.log(years);
+// console.log(mix);
+
+// // getting exact array items
+
+// console.log(names[0]);
+
+// // setting array item
+
+// names[0]="asycan";
+// console.log(names);
+// names[4]="kwiş";
+
+// // adding item to array
+
+// names.push("bademsu");
+// names.unshift("pilav");
+
+// // removing item from array using methods
+
+// // years.pop();
+// // console.log((years));
+
+// years.shift();
+// console.log((years));
+
+// // indexOf searching method
+
+// let index=names.indexOf("ereş");
+// console.log(index)
+
+// // reversing an array
+
+// names.reverse();
+// console.log(names);
+
+// years.sort();
+// console.log(years);
+
+// // merging arrays
+
+// let veri = names.concat(years);
+// console.log(veri);
+
+// names.splice(2,0,"pilavcan");
+// console.log(names);
+
+// names.splice(2,1,"pkero");
+// console.log(names);
