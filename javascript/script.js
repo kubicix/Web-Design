@@ -388,16 +388,50 @@
 
 // console.log(day);
 
-let hour=8;
+// let hour=8;
 
-switch(true){
-    case (hour >=6 && hour<=12):
-        console.log("Günaydın");
-        break
-    case (hour >=13 && hour<=17):
-        console.log("İyi Günler");
-        break
-    case (hour >=18 && hour<=24):
-        console.log("İyi Akşamlar");
-        break
+// switch(true){
+//     case (hour >=6 && hour<=12):
+//         console.log("Günaydın");
+//         break
+//     case (hour >=13 && hour<=17):
+//         console.log("İyi Günler");
+//         break
+//     case (hour >=18 && hour<=24):
+//         console.log("İyi Akşamlar");
+//         break
+// }
+
+
+// Object Literals
+
+// let firstName="Kubilay";
+// let lastName="Birer";
+
+// let kubi = ["Kubilay","Birer",22,];
+// let esma = ["Esma","Koray",40];
+
+// Object Literals - JSON
+let data ={
+    userName : "kubicix",
+    firstName : "Kubilay",
+    lastName : "Birer",
+    age : 22,
+    hobbies : ["futbol","yazılım","fitness"],
+    address :{
+        city:"İstanbul",
+        country : "Türkiye",
+        phone : "050000000",
+    }
 }
+
+veri=data;
+veri=data.firstName;
+veri=data.lastName;
+veri=data.hobbies;
+veri=data.hobbies.length;
+veri=data.address.city;
+veri=data.address.phone;
+
+console.log(veri)
+console.log(typeof(veri))
