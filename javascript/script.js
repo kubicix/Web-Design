@@ -412,26 +412,120 @@
 // let esma = ["Esma","Koray",40];
 
 // Object Literals - JSON
-let data ={
-    userName : "kubicix",
-    firstName : "Kubilay",
-    lastName : "Birer",
-    age : 22,
-    hobbies : ["futbol","yazılım","fitness"],
-    address :{
-        city:"İstanbul",
-        country : "Türkiye",
-        phone : "050000000",
-    }
+// let data ={
+//     userName : "kubicix",
+//     firstName : "Kubilay",
+//     lastName : "Birer",
+//     age : 22,
+//     hobbies : ["futbol","yazılım","fitness"],
+//     address :{
+//         city:"İstanbul",
+//         country : "Türkiye",
+//         phone : "050000000",
+//     }
+// }
+
+// veri=data;
+// veri=data.firstName;
+// veri=data.lastName;
+// veri=data.hobbies;
+// veri=data.hobbies.length;
+// veri=data.address.city;
+// veri=data.address.phone;
+
+// console.log(veri)
+// console.log(typeof(veri))
+
+// While loop
+
+// let i = 0;
+
+// while (i<10){ // infinite loop
+//     console.log(i);
+//     i++; //i+=1
+// }
+
+// let i = 10;
+
+
+// while(i>0){
+//     console.log(i);
+//     i--;
+// }
+
+// break and continue 
+
+// let i =0;
+
+// while(i<10){
+//     console.log(i);
+//     if(i==6){
+//         break;
+//     }
+//     i++;
+// }
+
+// let i = 0;
+
+// while(i<10){
+    
+//     i++
+//     if(i==3){
+//         continue;
+//     }
+//     console.log(i)
+    
+// }
+
+// do while loop
+
+// do{
+//     console.log(i)
+//     i++;
+// }while(i<10)
+
+// for loop
+
+// for (let i=0;i<10;i++){
+//     console.log(i)
+// }
+
+// for (let i=0;i<10;i++){
+//     if(i==3){
+//         console.log("seçilen rakam: "+i)
+//         continue
+//     }
+//     console.log(i)
+// }
+
+// let toplam=0;
+
+// for(let i=1;i<10;i++){
+//     toplam+=i;
+// }
+// console.log(toplam)
+
+// let sonuc = 1;
+
+// for(let i =1;i<10;i++){
+//     sonuc*=i;
+// }
+
+// console.log(sonuc)
+
+// Using loops in array and objects
+
+let citys=["istanbul","Kocaeli","İzmir","Eskişehir","Edirne"];
+
+// Arrays
+
+for(let i =0;i<citys.length;i++){
+    console.log(citys[i]);
 }
 
-veri=data;
-veri=data.firstName;
-veri=data.lastName;
-veri=data.hobbies;
-veri=data.hobbies.length;
-veri=data.address.city;
-veri=data.address.phone;
+// for-in method
 
-console.log(veri)
-console.log(typeof(veri))
+for(let i in citys){
+    console.log(`${i}. ${citys[i]}`); // index number is printed out as well, we can use this way too but it
+}
+
