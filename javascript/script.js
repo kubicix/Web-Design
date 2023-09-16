@@ -557,10 +557,82 @@ let users=[
 
 // console.log(veri);
 
-let numbers =[1,3,5,9,12];
+// let numbers =[1,3,5,9,12];
 
-let num = numbers.map(function(n){
-    return n*n;
-})
+// let num = numbers.map(function(n){
+//     return n*n;
+// })
 
-console.log(num)
+// console.log(num)
+
+//  Functions in javascript
+
+// function hi(){
+//     console.log("Hello World");
+// }
+// hi();
+// hi();
+// hi();
+
+// function hi2(name,age){
+//     console.log(`Hi ${name}, you are ${age} level :)`);    //template literals
+// }
+// hi2("Kubi",22);
+// hi2("Fıstık",3);
+
+//  function calculateAge(birthYear){
+//      console.log(2023-birthYear)
+//      return 2023-birthYear
+//  }
+
+// function driverLicense(birth,name){
+//     let yas =calculateAge(birth)
+//     let ehliyet=(yas>=18)
+//     if(ehliyet){
+//         console.log(`Hi ${name}, you can get a driver license.`)
+//     }
+//     else{
+//         console.log(`${name},you cannot get the driver's licence because your age is not enough! `)}
+//     }
+
+//     // driverLicense(1976,"Ali")
+//     driverLicense(2005,"Kero")
+
+// Window Object
+
+// veri = window
+
+// console.log(veri);
+
+// // Alert
+
+// alert("Hi")
+
+// // Prompt
+
+// var veri2=prompt("Enter your name here")
+
+// // Confirm
+
+// var veri3=confirm("Are you sure you wanna exit.")
+
+// if (veri3){
+//     console.log("You succesfully quitted the website")
+// }
+// else{
+//     console.log("quit didnt happen")
+// }
+
+// Location
+
+// veri = window.location;
+// veri = window.location.href;
+// veri = window.location.hostname;
+// veri = window.location.protocol;
+
+// // // window.location.href="https://www.udemy.com"
+// // window.location.reload()
+
+// console.log(veri);
+
+// Scopes and working with Scopes
