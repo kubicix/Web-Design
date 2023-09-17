@@ -650,41 +650,41 @@ if (true){
 
 // Examples
 
- var veri1=5; // Global Scope
- let veri2=10;
- const veri3=15;
+//  var veri1=5; // Global Scope
+//  let veri2=10;
+//  const veri3=15;
 
-// function fonksiyon(){
-//     // Function Scope Example
-//     var veri1 = 30;
-//     let veri2=40;
-//     const veri3=50;
+// // function fonksiyon(){
+// //     // Function Scope Example
+// //     var veri1 = 30;
+// //     let veri2=40;
+// //     const veri3=50;
+// //     console.log(veri1,veri2,veri3)
+// // }
+
+// // fonksiyon()
+// // console.log(veri1,veri2,veri3)
+
+// if(true){
+//     // Block Scope Example
+//     var veri1=30; // var, variables can be used outside the scope
+//     let veri2=20;
+//     const veri3=30;
 //     console.log(veri1,veri2,veri3)
 // }
 
-// fonksiyon()
 // console.log(veri1,veri2,veri3)
 
-if(true){
-    // Block Scope Example
-    var veri1=30; // var, variables can be used outside the scope
-    let veri2=20;
-    const veri3=30;
-    console.log(veri1,veri2,veri3)
-}
+// // console.log(a);
+// // console.log(b);
+// // console.log(c);
 
-console.log(veri1,veri2,veri3)
+// const admin_password="11111111";
 
-// console.log(a);
-// console.log(b);
-// console.log(c);
+// if(true){
+//     let admin_password="2222222";
+// }
 
-const admin_password="11111111";
-
-if(true){
-    let admin_password="2222222";
-}
-
-console.log(admin_password)
+// console.log(admin_password)
 
 
