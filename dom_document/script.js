@@ -95,29 +95,47 @@ let vei;
 
 // Travelling through items
 
-let value;
+// let value;
 
-const todoList=document.querySelector(".list-group");
-const todo=document.querySelector(".list-group-item:nth-child(2)");
-const card=document.querySelector(".card");
+// const todoList=document.querySelector(".list-group");
+// const todo=document.querySelector(".list-group-item:nth-child(2)");
+// const card=document.querySelector(".card");
 
 
-value = todoList;
-value = todo;
-value = card;
+// value = todoList;
+// value = todo;
+// value = card;
 
-// Child Nodes
+// // Child Nodes
 
-//childNodes will get all the elements
-value = todoList.childNodes;
-//children will only get list items,elements
-value = todoList.children;
-value = todoList.children[0];
-value = todoList.children[todoList.children.length - 1];
-value = todoList.children[1].textContent="changed item";
+// //childNodes will get all the elements
+// value = todoList.childNodes;
+// //children will only get list items,elements
+// value = todoList.children;
+// value = todoList.children[0];
+// value = todoList.children[todoList.children.length - 1];
+// value = todoList.children[1].textContent="changed item";
 
-value = card;
-value = card.children;
-value = card.children[1].children[0].textContent="Greetings";
+// value = card;
+// value = card.children;
+// value = card.children[1].children[0].textContent="Greetings";
+
+// value = todoList;
+// // value = todoList.children[0];
+// value = todoList.firstElementChild;
+// // value = todoList.lastElementChild;
+
+// value = todoList.children.length;
+// value = todoList.childElementCount;
+
+// value=card;
+// value=card.parentElement;
+// value=card.parentElement.parentElement;
+
+// value = todo;
+// value=todo.nextElementSibling.nextElementSibling;
+// value=todo.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+
+
 
 console.log(value);
