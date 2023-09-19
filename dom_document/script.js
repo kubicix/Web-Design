@@ -138,4 +138,55 @@ let vei;
 
 
 
-console.log(value);
+// console.log(value);
+
+// Creating Elements
+
+// const li = document.createElement("li");
+
+// // Adding Class
+
+// li.className="list-group-item list-group-item-secondary";
+
+// // Adding Attribute
+
+// li.setAttribute("title","new item");
+// li.setAttribute("data-id","5");
+
+// const text = document.createTextNode("Todo 5");
+
+// li.appendChild(text);
+
+// const a = document.createElement("a");
+// a.setAttribute("href","#");
+// a.className="delete-item float-right";
+// a.innerHTML="<i class='fas fa-times'></i>"
+
+// li.appendChild(a);
+
+// document.querySelector("#task-list").appendChild(li)
+
+
+// console.log(li)
+
+// Deleting Elements
+
+// const taskList= document.querySelector("#task-list");
+
+// taskList.remove();
+
+// taskList.childNodes[7].remove();
+
+//  taskList.children[2].remove()
+
+// taskList.removeChild(taskList.children[0]);
+
+// Attribute Silme
+
+// taskList.children[1].removeAttribute("class")
+
+// for(let i=0;i<taskList.children.length;i++){
+//     taskList.children[i].removeAttribute("class")
+// }
+
+// console.log(taskList);
