@@ -193,38 +193,69 @@ let vei;
 
 // Updating Elements
 
-const cardHeader = document.querySelector(".card-header");
+// const cardHeader = document.querySelector(".card-header");
 
-const h2 = document.createElement("h2");
-h2.setAttribute("class","card-header");
-h2.appendChild(document.createTextNode("New Lists"));
+// const h2 = document.createElement("h2");
+// h2.setAttribute("class","card-header");
+// h2.appendChild(document.createTextNode("New Lists"));
 
-const parent = document.querySelector(".card");
-parent.replaceChild(h2,cardHeader);
+// const parent = document.querySelector(".card");
+// parent.replaceChild(h2,cardHeader);
 
-// Updating elements on classes
+// // Updating elements on classes
 
-const taskList=document.querySelector("#task-list");
+// const taskList=document.querySelector("#task-list");
 
-let value;
+// let value;
 
-link = taskList.children[0].children[0];
-value=link.className;
-value=link.classList;
-// value=link.classList[0]
-// value=link.classList[1]
+// link = taskList.children[0].children[0];
+// value=link.className;
+// value=link.classList;
+// // value=link.classList[0]
+// // value=link.classList[1]
 
-link.classList.add("new");
-link.classList.remove("new");
+// link.classList.add("new");
+// link.classList.remove("new");
 
-// Updating Attributes
+// // Updating Attributes
 
-value=link.getAttribute("href");
-value=link.setAttribute("href","https://instagram.com/kubilaybirer");
+// value=link.getAttribute("href");
+// value=link.setAttribute("href","https://instagram.com/kubilaybirer");
 
-value=link.hasAttribute("href");
-
-
+// value=link.hasAttribute("href");
 
 
-console.log(value)
+// console.log(value)
+
+// Event Listener and Event Object
+
+const btn=document.querySelector("#btnDeleteAll")
+const btn2=document.querySelector("#btnAddNewTask")
+
+//  btn.addEventListener("click",function(){
+//     console.log('clicked')
+//  })
+
+// btn.addEventListener("mouseover",btnHover);
+// btn2.addEventListener("mouseover",btnHover)
+
+// function btnHover(){
+//     console.log("hovered")
+// }
+
+btn.addEventListener("click",function(a){
+    let value;
+
+    value=a;
+    value=a.target;
+    value=a.target.id;
+    value=a.target.classList;
+    value=a.type;
+
+    a.preventDefault();
+    console.log(value)
+
+    
+})
+
+
