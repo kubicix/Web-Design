@@ -395,10 +395,10 @@ let vei;
 //     })
 // });
 
-const ul =document.querySelector("ul");
+// const ul =document.querySelector("ul");
 
-ul.addEventListener("click",function(e){
-    if(e.target.className === "fas fa-times"){
-        e.target.parentElement.parentElement.remove();
-    }
-});
+// ul.addEventListener("click",function(e){
+//     if(e.target.className === "fas fa-times"){
+//         e.target.parentElement.parentElement.remove();
+//     }
+// });
