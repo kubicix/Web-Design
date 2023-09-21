@@ -229,8 +229,8 @@ let vei;
 
 // Event Listener and Event Object
 
-const btn=document.querySelector("#btnDeleteAll")
-const btn2=document.querySelector("#btnAddNewTask")
+// const btn=document.querySelector("#btnDeleteAll")
+// const btn2=document.querySelector("#btnAddNewTask")
 
 //  btn.addEventListener("click",function(){
 //     console.log('clicked')
@@ -243,19 +243,100 @@ const btn2=document.querySelector("#btnAddNewTask")
 //     console.log("hovered")
 // }
 
-btn.addEventListener("click",function(a){
-    let value;
+// btn.addEventListener("click",function(a){
+//     let value;
 
-    value=a;
-    value=a.target;
-    value=a.target.id;
-    value=a.target.classList;
-    value=a.type;
+//     value=a;
+//     value=a.target;
+//     value=a.target.id;
+//     value=a.target.classList;
+//     value=a.type;
 
-    a.preventDefault();
-    console.log(value)
+//     a.preventDefault();
+//     console.log(value)
 
     
-})
+// })
 
+// Mouse Events
+
+const btn=document.querySelector("#btnAddNewTask")
+const ul=document.querySelector("#task-list")
+
+// click event
+
+// btn.addEventListener("click",run);
+// ul.addEventListener("click",run);
+
+// double click event
+
+// btn.addEventListener("dblclick",run);
+
+// mouse down event
+
+// btn.addEventListener("mousedown",run);
+
+// mouse up event
+
+// btn.addEventListener("mouseup",run);
+
+// mouse enter event
+
+//  ul.addEventListener("mouseenter",run);
+
+// mouse leave event
+
+// ul.addEventListener("mouseleave",run);
+
+// mouse over event
+
+// ul.addEventListener("mouseover",run);
+
+// mouse out event
+
+// ul.addEventListener("mouseout",run);
+
+// mouse move event
+
+// ul.addEventListener("mousemove",run);
+
+// function run(event){
+//     console.log(`event type: ${event.type}`);
+// }
+
+const text =document.getElementById("txtTaskName")
+
+// // Focus
+// text.addEventListener("focus",run);
+
+// // Blur
+// text.addEventListener("blur",run)
+
+// Paste
+// text.addEventListener("paste",run)
+
+// Copy
+// text.addEventListener("copy",run)
+
+// Cut
+// text.addEventListener("cut",run)
+
+// Select
+// text.addEventListener("select",run)
+
+// KeyDown
+// text.addEventListener("keydown",run)
+
+// // KeyUp
+// text.addEventListener("keyup",run)
+
+
+
+// function run(e){
+//     console.log(e.type)
+//     console.log(e.target.value)
+//     e.target.value=""
+// }
+
+// Event Bubbling
 
