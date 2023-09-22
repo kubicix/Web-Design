@@ -28,5 +28,29 @@ function clearItems(e){
     sessionStorage.clear()
 }
 
-
 // Local Storage
+
+// setItem
+
+localStorage.setItem('coding', 'Javascript'); 
+localStorage.setItem('computer', 'Monster Abra'); 
+localStorage.setItem('bitcoin', 25000); 
+
+// getItem
+
+const value = localStorage.getItem("coding")
+
+console.log(value)
+
+// Clearing Local Storage
+
+// localStorage.clear()
+localStorage.getItem("gold")
+
+const val = "bitcoin";
+if(localStorage.getItem(val)===null){
+    console.log(`there is no element named "${val}" in local storage!`)
+}
+else{
+    console.log(`"${val}" element found in a local storage`)
+}
