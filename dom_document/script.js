@@ -402,3 +402,47 @@ let vei;
 //         e.target.parentElement.parentElement.remove();
 //     }
 // });
+
+// Adding Elements to ToDo
+
+// selecting elements
+
+const form=document.querySelector("form");
+const input=document.querySelector("#txtTaskName");
+const btnAddNewTask = document.querySelector("#btnAddNewTask");
+const btnDeleteAll = document.querySelector("#btnDeleteAll");
+const taskList=document.querySelector("#task-list");
+
+eventListeners();
+
+function eventListeners(){
+    form.addEventListener("submit",addNewItem);
+}
+
+function addNewItem(e){
+    console.log(input.value)
+    if(input.value==""){
+        alert("you have to enter a value to submit")
+    }
+    else{
+        // creating li
+        const li =document.createElement("li");
+        li.className="list-group-item list-group-item-secondary"
+        li.appendChild(document.createTextNode(input.value));
+
+        // creating a
+        const a =document.createElement("a");
+        a.classList="delete-item float-right";
+        a.setAttribute("href","#");
+        a.innerHTML='<i class="fas fa-times"></i>';
+
+        // adding a to li
+        li.appendChild(a);
+
+        taskList.appendChild(li);
+
+        console.log("submit");
+    }
+    e.preventDefault();
+    input.value=""
+}
