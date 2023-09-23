@@ -255,7 +255,7 @@ let vei;
 //     a.preventDefault();
 //     console.log(value)
 
-    
+
 // })
 
 // Mouse Events
@@ -407,34 +407,39 @@ let vei;
 
 // selecting elements
 
-const form=document.querySelector("form");
-const input=document.querySelector("#txtTaskName");
+const form = document.querySelector("form");
+const input = document.querySelector("#txtTaskName");
 const btnAddNewTask = document.querySelector("#btnAddNewTask");
 const btnDeleteAll = document.querySelector("#btnDeleteAll");
-const taskList=document.querySelector("#task-list");
+const taskList = document.querySelector("#task-list");
 
 eventListeners();
 
-function eventListeners(){
-    form.addEventListener("submit",addNewItem);
+function eventListeners() {
+    // submit event
+    form.addEventListener("submit", addNewItem);
+    // delete an item
+    taskList.addEventListener("click", deleteItem)
+    // delete all
+    btnDeleteAll.addEventListener("click", deleteAllItems)
 }
 
-function addNewItem(e){
+function addNewItem(e) {
     console.log(input.value)
-    if(input.value==""){
+    if (input.value == "") {
         alert("you have to enter a value to submit")
     }
-    else{
+    else {
         // creating li
-        const li =document.createElement("li");
-        li.className="list-group-item list-group-item-secondary"
+        const li = document.createElement("li");
+        li.className = "list-group-item list-group-item-secondary"
         li.appendChild(document.createTextNode(input.value));
 
         // creating a
-        const a =document.createElement("a");
-        a.classList="delete-item float-right";
-        a.setAttribute("href","#");
-        a.innerHTML='<i class="fas fa-times"></i>';
+        const a = document.createElement("a");
+        a.classList = "delete-item float-right";
+        a.setAttribute("href", "#");
+        a.innerHTML = '<i class="fas fa-times"></i>';
 
         // adding a to li
         li.appendChild(a);
@@ -444,5 +449,36 @@ function addNewItem(e){
         console.log("submit");
     }
     e.preventDefault();
-    input.value=""
+    input.value = "";
+}
+
+// deleting an element
+function deleteItem(e) {
+    
+    if (e.target.className == "fas fa-times") {
+        console.log(e.target);
+        if (confirm("Are you sure you want to delete?")) {
+            e.target.parentElement.parentElement.remove();
+        }
+        
+    }
+    e.preventDefault();
+}
+
+// deleting all items
+function deleteAllItems(e) {
+    
+    if (e.target.className == "btn btn-outline-primary btn-sm delete-all float-right") {
+        if (confirm("Are you sure you want to delete all items?")) {
+            taskList.childNodes.forEach(function(item){
+                if (item.nodeType===1){
+                    item.remove()
+                }
+            })
+            // Alternative way is easier
+            // taskList.innerHTML="";
+        }
+        
+    }
+    e.preventDefault();
 }
