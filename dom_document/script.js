@@ -455,6 +455,7 @@ function setItemToLS(text){
 }
 
 function createItem(text) {
+    
     // creating li
     const li = document.createElement("li");
     li.className = "list-group-item list-group-item-secondary"
@@ -497,10 +498,21 @@ function deleteItem(e) {
         console.log(e.target);
         if (confirm("Are you sure you want to delete?")) {
             e.target.parentElement.parentElement.remove();
+            deleteTodoFromStorage(e.target.parentElement.parentElement.textContent);
         }
 
     }
     e.preventDefault();
+}
+
+function deleteTodoFromStorage(deletetodo){
+    let todos = getItemsFromLS();
+    todos.forEach(function(todo,index){
+        if(todo === deletetodo ){
+            todos.splice(index , 1 );
+        }
+    })
+    localStorage.setItem('todos', JSON.stringify(todos));
 }
 
 // deleting all items
@@ -508,13 +520,10 @@ function deleteAllItems(e) {
 
     if (e.target.className == "btn btn-outline-primary btn-sm delete-all float-right") {
         if (confirm("Are you sure you want to delete all items?")) {
-            taskList.childNodes.forEach(function (item) {
-                if (item.nodeType === 1) {
-                    item.remove()
-                }
-            })
-            // Alternative way is easier
-            // taskList.innerHTML="";
+            while(taskList.firstChild){
+                taskList.removeChild(taskList.firstChild);
+            }
+            localStorage.clear();
         }
 
     }
