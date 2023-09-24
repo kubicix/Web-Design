@@ -412,7 +412,8 @@ const input = document.querySelector("#txtTaskName");
 const btnAddNewTask = document.querySelector("#btnAddNewTask");
 const btnDeleteAll = document.querySelector("#btnDeleteAll");
 const taskList = document.querySelector("#task-list");
-const items = ["Todo 1", "Todo 2", "Todo 3", "Todo 4","Todo 5","Todo 6"];
+// const items = ["Todo 1", "Todo 2", "Todo 3", "Todo 4","Todo 5","Todo 6"];
+let todos;
 
 // load items
 loadItems();
@@ -431,9 +432,26 @@ function eventListeners() {
 }
 
 function loadItems() {
-    items.forEach(function (item) {
+    todos =getItemsFromLS();
+    todos.forEach(function (item) {
         createItem(item);
     })
+}
+
+function getItemsFromLS(){
+    if(localStorage.getItem("todos")==null){
+        todos=[];
+    }
+    else{
+        todos = JSON.parse(localStorage.getItem("todos"));
+    }
+    return todos;
+}
+
+function setItemToLS(text){
+    todos=getItemsFromLS();
+    todos.push(text);
+    localStorage.setItem("todos",JSON.stringify(todos));
 }
 
 function createItem(text) {
@@ -465,6 +483,8 @@ function addNewItem(e) {
     // create item 
 
     createItem(input.value)
+
+    setItemToLS(input.value)
 
     e.preventDefault();
     input.value = "";
