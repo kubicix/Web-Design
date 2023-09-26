@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+            Name: <input class="control" type="text" >
+        </p>
+        <p>
+            Education : <select class="control">
+                <option value="Elementary S.">Elementary S.</option>
+                <option value="Middle S.">Middle S.</option>
+                <option value="High S.">High S.</option>
+                <option value="University">University</option>
+            </select>
+        </p>
+    </form>
+    <script>
+
+        $(document).ready(function(){
+            $(".control").change(function(){
+                console.log($(this).val())
+            })
+        })
+
+    </script>
+</body>
+</html>
