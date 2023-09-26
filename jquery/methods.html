@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .highlight{
+            background-color: turquoise;
+        }
+        .orange{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Link1</a>
+    <h3 id="header">My Courses</h3>
+    <ul id="list">
+        <li class="item1">Advanced Web Programming</li>
+        <li>Advanced Python Programming <a href="#">Link 2</a></li>
+        <li>Android and IOS Mobil Programming</li>
+    </ul>
+    <img src="landscape1.jpg" width="200">
+    <br>
+    <input type="text" id="name" placeholder="Your name" style="font-size: 20px;">
+    <br>
+    <br>
+    <input type="text" id="surname" placeholder="Your surname" style="font-size: 20px;">
+    <br>
+    <br>
+    <button id="btnRegister" onclick="register()">Register</button>
+
+    <script>
+        console.log($("h3").text())
+
+        console.log($("li").text())
+
+        $("h3").text("My Udemy Courses")
+
+        function register(){
+            var name=$("#name").val();
+            var surname=$("#surname").val();
+
+            console.log(name+" "+surname+" registered to the course!")
+
+            $("#name").toggleClass("highlight")
+            $("#surname").addClass("orange")
+        }
+
+        $("img").attr("width","350")
+
+
+
+    </script>
+</body>
+</html>
