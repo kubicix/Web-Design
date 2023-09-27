@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>Advanced Web Programming HTML,CSS,JS</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(2000)            })
+        })
+
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("p").show("slow",function(){
+                    alert("paragraph is shown")
+                })            })
+        })
+
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $("p").toggle("fast")            })
+        })
+    </script>
+</body>
+</html>
