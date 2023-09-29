@@ -46,6 +46,32 @@ Person.prototype.getName = function(){
     return this.name;
 }
         
-console.log(ayaz.calculateAge())
-console.log(ayaz);
-console.log(ayaz.getName());
+// console.log(ayaz.calculateAge())
+// console.log(ayaz);
+// console.log(ayaz.getName());
+
+// Object.create
+
+let personProto= {
+    calculateAge : function(){
+        return 2023 - this.yearOfBirth
+    }
+}
+
+let kubi = Object.create(personProto)
+
+kubi.name="kubi"
+kubi.yearOfBirth=2001
+kubi.job="student"
+
+let asya =Object.create(personProto,{
+    name:{value:"asya"},
+    yearOfBirth:{value:2002},
+    job:{value:"student"}
+})
+
+console.log(kubi)
+console.log(kubi.calculateAge())
+console.log("--------------")
+console.log(asya)
+console.log(asya.calculateAge())
