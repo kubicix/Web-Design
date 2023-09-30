@@ -78,24 +78,43 @@
 
 // Prototype based Inheritance
 
-let Person = function(name,yearOfBirth,job){
-        this.name=name;
-        this.yearOfBirth=yearOfBirth;
-        this.job=job;
-}
+// let Person = function(name,yearOfBirth,job){
+//         this.name=name;
+//         this.yearOfBirth=yearOfBirth;
+//         this.job=job;
+// }
 
-Person.prototype.calculateAge=function(){
-    return  2023 - this.yearOfBirth ;
-}
+// Person.prototype.calculateAge=function(){
+//     return  2023 - this.yearOfBirth ;
+// }
 
-let Teacher = function(name,yearOfBirth,job,subject){
-    //Inheritance method
-    Person.call(this,name,yearOfBirth,job)
-    this.subject=subject;
-}
+// let Teacher = function(name,yearOfBirth,job,subject){
+//     //Inheritance method
+//     Person.call(this,name,yearOfBirth,job)
+//     this.subject=subject;
+// }
 
-Teacher.prototype=Object.create(Person.prototype)
+// Teacher.prototype=Object.create(Person.prototype)
 
-let aylin = new Teacher("aylin",1980,"teacher","history")
-console.log(aylin)
-console.log(aylin.calculateAge())
+// let aylin = new Teacher("aylin",1980,"teacher","history")
+// console.log(aylin)
+// console.log(aylin.calculateAge())
+
+// Immediate Functions
+
+// function welcome(){
+//     var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+//     var today=new Date();
+//     var msg="Welcome. Today is "+days[today.getDay()];
+//     return msg;;
+// }
+
+// console.log(welcome());
+
+(function(name){
+    var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var today=new Date();
+    var msg='Welcome '+ name + " Today is "+days[today.getDay()];
+    console.log(msg);
+
+}("Kubilay"))
